@@ -1,0 +1,17 @@
+{
+  "name": "lib",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Dani Adkins <danirenaeadkins12@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/nss-evening-cohort-04/modernjs-quiz-itsdanirenae",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
