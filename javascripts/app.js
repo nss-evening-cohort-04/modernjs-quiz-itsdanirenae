@@ -75,8 +75,8 @@ $("#attack").click(function(dothings){
     var attackbtn = $(dothings.currentTarget);
     console.log("ey!")
     Robot.runAttack();
-});
     Robot.winnerWinnerChickenDinner();
+});
 
   });
 
