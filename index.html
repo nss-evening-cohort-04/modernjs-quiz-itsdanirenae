@@ -1,193 +1,228 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-
-  <article id="game-container">
-
-
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <article id="game-container">
     <section id="player-setup" class="card card--name">
       <div class="card__prompt">
-        <div><h1>Welcome to the Robot Showdown</h1></div>
-         <div class="field">
-
-          <div><h3>Player One</h3></div>
-            <input type="text" autofocus="true" id="player1-name" class="field__textinput" placeholder="Type your name">
+        <div>
+          <h1>Welcome to the Robot Showdown</h1>
+        </div>
+        <div class="field">
+          <div>
+            <h3>Player One</h3>
           </div>
-
-
-      <div><h3>Player Two</h3></div>
+          <input type="text" autofocus="true" id="player1-name" class="field__textinput" placeholder="Type your name">
+        </div>
+        <div>
+          <h3>Player Two</h3>
+        </div>
         <div class="field">
           <input type="text" autofocus="true" id="player2-name" class="field__textinput" placeholder="Type your name">
         </div>
-
       </div>
-
       <div class="card__button">
         <a class="card__link btn btn--big btn--yellow"
-           href="#"
-           next="card--class">
-          <span class="btn__prompt"></span>
-          <span class="btn__text">Enter at Your Own Risk</span>
+          href="#"
+          next="card--class">
+        <span class="btn__prompt"></span>
+        <span class="btn__text">Choose Your Robot</span>
         </a>
       </div>
     </section>
-
-
-
-
-
-<!--         Player 1 Robots
- -->
+    <!--         Player 1 Robots
+      -->
     <section id="class-select" class="card card--class">
-      <div class="card__prompt">
-        <div><h1>CHOOSE YOUR ROBOT</h1></div>
+    <div class="card__prompt">
+      <div>
+        <h1>CHOOSE YOUR ROBOT</h1>
+      </div>
+    </div>
+    </div>
+    <div>
+      <h3>Player 1 Robots</h3>
+    </div>
+    <div class="container-fluid" id="player1Robot">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card__button">
+            <a class="class__link btn btn--big btn--white" data-robotclass="MilitaryRobot" href="#">
+            <span class="btn__text">Military Robot</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card__button">
+            <a class="class__link btn btn--big btn--white" data-robotclass="SpaceRobot" href="#">
+            <span class="btn__text">Space Robot</span>
+            </a>
+          </div>
         </div>
       </div>
-
-      <div class="container-fluid" id="player1Robot">
-        <div class="row">
-
-            <div class="col-sm-6">
-              <div class="card__button">
-                <a class="class__link btn btn--big btn--white" href="#">
-                <!-- <img class="crest" src="../img/gryffindorcrest.png"> -->
-                  <span class="btn__text">robot 1</span>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6">
-              <div class="card__button">
-                <a class="class__link btn btn--big btn--white" href="#">
-                <!-- <img class="crest" src="../img/hufflepuffcrest.png"> -->
-                  <span class="btn__text">robot 2</span>
-                </a>
-              </div>
-            </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card__button">
+            <a class="class__link btn btn--big btn--white" data-robotclass="ServiceRobot" href="#">
+            <span class="btn__text">Service Robot</span>
+            </a>
+          </div>
         </div>
+        <div class="col-sm-6">
+          <div class="card__button">
+            <a class="class__link btn btn--big btn--white" data-robotclass="SwimmingRobot" href="#">
+            <span class="btn__text">Swimming Robot</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card__button">
+            <a class="class__link btn btn--big btn--white" data-robotclass="BipedalRobot" href="#">
+            <span class="btn__text">Bipedal Robot</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card__button">
+            <a class="class__link btn btn--big btn--white" data-robotclass="FlyingRobot" href="#">
+            <span class="btn__text">Flying Robot</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--         Player 2 Robots
+      -->
+    <div>
+      <h3>Player 2 Robots</h3>
+    </div>
+    <div class="container-fluid" id="player2Robot">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card__button">
+            <a class="class__link btn btn--big btn--white" data-robotclass="MilitaryRobot" href="#">
+            <span class="btn__text">Military Robot</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card__button">
+            <a class="class__link btn btn--big btn--white" data-robotclass="SpaceRobot" href="#">
+            <span class="btn__text">Space Robot</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card__button">
+            <a class="class__link btn btn--big btn--white" data-robotclass="ServiceRobot" href="#">
+            <span class="btn__text">Service Robot</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card__button">
+            <a class="class__link btn btn--big btn--white" data-robotclass="SwimmingRobot" href="#">
+            <span class="btn__text">Swimming Robot</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card__button">
+            <a class="class__link btn btn--big btn--white" data-robotclass="BipedalRobot" href="#">
+            <span class="btn__text">Bipedal Robot</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card__button">
+            <a class="class__link btn btn--big btn--white" data-robotclass="FlyingRobot" href="#">
+            <span class="btn__text">Flying Robot</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card__button">
+      <a class="card__link btn btn--big btn--yellow"
+        href="#"
+        next="card--dome">
+      <span class="btn__prompt"></span>
+      <span class="btn__text">Enter the Battledome!</span>
+      </a>
+    </div>
+  </section>
+
+
+    <!-- Battledome -->
+
+    <section id="battledome" class="card card--battleground">
+
+      <div class="card__prompt">
+        <div><h1>Robot Battledome</h1></div>
+      </div>
+
+
+      <div class="container-fluid" id="userBattleground">
+
         <div class="row">
-            <div class="col-sm-6">
-              <div class="card__button">
-                <a class="class__link btn btn--big btn--white" href="#">
-                <!-- <img class="crest" src="../img/ravenclawcrest.png"> -->
-                  <span class="btn__text">robot 3</span>
-                </a>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card__button">
-                <a class="class__link btn btn--big btn--white" href="#">
-                <!-- <img class="crest" src="../img/slytherincrest.png"> -->
-                  <span class="btn__text">robot 4</span>
-                </a>
-              </div>
-            </div>
+          <div id="stats">
+            <div class="col-sm-4">
+              <progress class="progress" id="player1-health" value="100" max="100"></progress>
+              <div id="player1stats">
 
-            <div class="col-sm-6">
-              <div class="card__button">
-                <a class="class__link btn btn--big btn--white" href="#">
-                <!-- <img class="crest" src="../img/slytherincrest.png"> -->
-                  <span class="btn__text">robot 5</span>
-                </a>
               </div>
             </div>
+            <div class="col-sm-4">
+            <div>
+              <img id="battleImage">
+            </div>
+              <div id="battleStats">
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div id="img_enemy">
+              </div>
+              <progress class="progress" id="player2-health" value="100" max="100"></progress>
+              <div id="player2stats">
 
-            <div class="col-sm-6">
-              <div class="card__button">
-                <a class="class__link btn btn--big btn--white" href="#">
-                <!-- <img class="crest" src="../img/slytherincrest.png"> -->
-                  <span class="btn__text">robot 6</span>
-                </a>
               </div>
             </div>
           </div>
-      </div>
-
-      <!--         Player 2 Robots
- -->
-
-    <section id="class-select" class="card card--class">
-      <div class="card__prompt">
-        <div><h1>CHOOSE YOUR ROBOT</h1></div>
         </div>
+
+
+
       </div>
+      <div class="card__button">
+      <a class="card__link btn btn--big btn--yellow"
+        href="#"
+        next="card--dome">
+      <span class="btn__prompt"></span>
+      <span class="btn__text" id="attack">Attack</span>
+      </a>
+    </div>
 
-      <div class="container-fluid" id="player2Robot">
-        <div class="row">
+      </section>
 
-            <div class="col-sm-6">
-              <div class="card__button">
-                <a class="class__link btn btn--big btn--white" href="#">
-                <!-- <img class="crest" src="../img/gryffindorcrest.png"> -->
-                  <span class="btn__text">robot 1</span>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6">
-              <div class="card__button">
-                <a class="class__link btn btn--big btn--white" href="#">
-                <!-- <img class="crest" src="../img/hufflepuffcrest.png"> -->
-                  <span class="btn__text">robot 2</span>
-                </a>
-              </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-              <div class="card__button">
-                <a class="class__link btn btn--big btn--white" href="#">
-                <!-- <img class="crest" src="../img/ravenclawcrest.png"> -->
-                  <span class="btn__text">robot 3</span>
-                </a>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card__button">
-                <a class="class__link btn btn--big btn--white" href="#">
-                <!-- <img class="crest" src="../img/slytherincrest.png"> -->
-                  <span class="btn__text">robot 4</span>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6">
-              <div class="card__button">
-                <a class="class__link btn btn--big btn--white" href="#">
-                <!-- <img class="crest" src="../img/slytherincrest.png"> -->
-                  <span class="btn__text">robot 5</span>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6">
-              <div class="card__button">
-                <a class="class__link btn btn--big btn--white" href="#">
-                <!-- <img class="crest" src="../img/slytherincrest.png"> -->
-                  <span class="btn__text">robot 6</span>
-                </a>
-              </div>
-            </div>
-          </div>
-      </div>
+  <div class="player1win card" style="display:none;" id="player1win"><h1>You win, player 1!</h1></div>
+  <div class="player2win card" style="display:none;" id="player2win"><h1>You win, player 2!</h1></div>
 
 
+</article>
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="javascripts/robot.js"></script>
-<!--     <script type="text/javascript" src="javascripts/playerOne.js"></script> -->
-  <script type="text/javascript" src="javascripts/app.js"></script>
-  <script type="text/javascript" src="javascripts/robotTypes.js"></script>
-<!--     <script type="text/javascript" src="javascripts/weapons.js"></script>
- -->
-</body>
+    <script type="text/javascript" src="javascripts/robotTypes.js"></script>
+    <script type="text/javascript" src="javascripts/robot.js"></script>
+    <script type="text/javascript" src="javascripts/battle.js"></script>
+    <script type="text/javascript" src="javascripts/app.js"></script>
+
+  </body>
 </html>
