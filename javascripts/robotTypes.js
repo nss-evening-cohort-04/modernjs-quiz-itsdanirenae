@@ -89,7 +89,7 @@ OldRobot.RobotTypes.FlyingRobot = function () {
   this.image = "<img src='../images/flying-robot.jpg' width=200px height 200px>";
 };
 OldRobot.RobotTypes.FlyingRobot.prototype = new OldRobot.RobotTypes.MainRobotTres();
-console.log("oldrobot", OldRobot);
+
 return OldRobot;
 })(Robot || {});
 

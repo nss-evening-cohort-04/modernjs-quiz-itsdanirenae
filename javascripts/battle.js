@@ -1,3 +1,4 @@
+"use strict";
 
 var Robot = (function(OldRobot) {
     var player1, player2;
@@ -21,8 +22,6 @@ function writeStats(){
     writeStats();
 };
 
-
-
 OldRobot.winnerWinnerChickenDinner = function(){
     if (player1.robot.healthBonus <= 0){
         $("#player2win").show();
@@ -31,6 +30,7 @@ OldRobot.winnerWinnerChickenDinner = function(){
         $("#player2win").hide();
         $("#player1win").show();
     }
-}
+};
+
   return OldRobot;
 })(Robot || {});

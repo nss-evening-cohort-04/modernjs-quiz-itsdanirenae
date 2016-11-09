@@ -7,8 +7,8 @@ var Robot = (function(OldRobot) {
       this.playerName = name;
       this.robot = {};
 
-      this.toString = function() { // this overrides the object method - execute this instead of objects tostring method
-        var output = `${this.playerName} has a health of ${this.robot.healthBonus} and a strength of ${this.robot.strengthBonus}!`
+      this.toString = function() {
+        var output = `${this.playerName} has a health of ${this.robot.healthBonus} and a strength of ${this.robot.strengthBonus}!`;
         return output;
       };
     };
